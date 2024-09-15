@@ -1,4 +1,4 @@
-# Library Management System - ASP.NET Core MVC Project
+# Library Management System - ASP.NET Core MVC Project 📚
 
 
 This project is part of my journey in the Patika+ Fullstack Developer Bootcamp, where I developed a comprehensive library management system using ASP.NET Core MVC. The system handles book and author operations efficiently, showcasing key principles of Object-Oriented Programming (OOP) and MVC architecture.
