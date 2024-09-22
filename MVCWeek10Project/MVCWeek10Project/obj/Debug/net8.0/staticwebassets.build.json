@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "pczwTHBMHbXfQRotab2ypxJ4wYZ+QkF/K3C8TdmmiGo=",
+  "Source": "MVCWeek10Project",
+  "BasePath": "_content/MVCWeek10Project",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MVCWeek10Project\\wwwroot",
+      "Source": "MVCWeek10Project",
+      "ContentRoot": "C:\\Users\\Yılmaz Yiğit Gökmen\\source\\repos\\MVCWeek10Project\\MVCWeek10Project\\wwwroot\\",
+      "BasePath": "_content/MVCWeek10Project",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Yılmaz Yiğit Gökmen\\source\\repos\\MVCWeek10Project\\MVCWeek10Project\\wwwroot\\lib\\bootstrap.css",
+      "SourceId": "MVCWeek10Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Yılmaz Yiğit Gökmen\\source\\repos\\MVCWeek10Project\\MVCWeek10Project\\wwwroot\\",
+      "BasePath": "_content/MVCWeek10Project",
+      "RelativePath": "lib/bootstrap.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap.css"
+    }
+  ]
+}

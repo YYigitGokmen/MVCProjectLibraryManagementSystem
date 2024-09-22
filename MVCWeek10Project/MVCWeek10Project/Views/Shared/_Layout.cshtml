@@ -1,0 +1,25 @@
+﻿<html>
+
+    <head>
+
+        <link href="~/lib/bootstrap.css" rel="stylesheet"/>
+        
+        
+    </head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+
+    <main role="main" style="flex: 1;">
+
+        @await Html.PartialAsync("_NavbarPartial")
+        <div class="container">
+
+            @RenderBody()
+
+        </div>
+
+    </main>
+    <partial name="_FooterPartial" />
+    </body>
+</html>
+
+@* I used Layout - PartialView in my project*@

@@ -1,0 +1,43 @@
+﻿@model IEnumerable<MVCWeek10Project.Models.Book>
+
+<h2>Book List</h2>
+
+<a asp-action="Create" class="btn btn-primary mb-3">Add New Book</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Publish Date</th>
+            <th>Copies Available</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+        {
+            <tr>
+                <td>@book.Title</td>
+                <td>@book.AuthorId</td> 
+                <td>@book.Genre</td>
+                <td>@book.PublishDate.ToShortDateString()</td>
+                <td>@book.CopiesAvailable</td>
+                <td>
+                    <a asp-action="Create" asp-route-id="@book.Id" class="btn btn-success">Create</a>
+                    <a asp-action="Details" asp-route-id="@book.Id" class="btn btn-info">Details</a>
+                    <a asp-action="Edit" asp-route-id="@book.Id" class="btn btn-warning">Edit</a>
+                    
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+
+
+
+

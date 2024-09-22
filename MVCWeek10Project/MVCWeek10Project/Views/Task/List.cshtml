@@ -1,0 +1,139 @@
+﻿@model List<TaskListViewModel>
+
+@*Main Page*@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <style>
+        /* General Reset */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 10px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .navbar a:hover {
+            background-color: #495057;
+            border-radius: 5px;
+        }
+
+        /* Jumbotron Styling */
+        .jumbotron {
+            background: linear-gradient(to right, #007bff, #6c757d);
+            color: #ffffff;
+            padding: 60px 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .jumbotron h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .jumbotron p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .jumbotron .btn {
+            margin: 5px;
+        }
+
+        /* Main Container Styling */
+        main {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+  
+    
+
+    <main role="main">
+        <div class="jumbotron">
+            <h1>Welcome to the Library Management System!</h1>
+            <p>Efficiently manage and organize your library's books and authors with our comprehensive system. Navigate through the menu to explore features and functionalities.</p>
+            
+        </div>
+    </main>
+
+
+       <div class="alert alert-info fw-bold">
+
+           Welcome - @User.Claims.FirstOrDefault( x =>x.Type == "email")?.Value -
+          
+       </div>
+
+       
+
+        <h3 class="text-center mt-5">Explore What You Can Do</h3>
+
+        <div class="text-center mb-4">
+            <a asp-controller="Book" asp-action="List" class="btn btn-primary fw-bold mx-2">View Books</a>
+            <a asp-controller="Author" asp-action="List" class="btn btn-secondary fw-bold mx-2">View Authors</a>
+        </div>
+       
+ </main>
+
+
+
+</body>
+</html>

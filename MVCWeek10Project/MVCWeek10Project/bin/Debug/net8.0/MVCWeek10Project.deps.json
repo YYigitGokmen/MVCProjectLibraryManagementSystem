@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "MVCWeek10Project/1.0.0": {
+        "runtime": {
+          "MVCWeek10Project.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MVCWeek10Project/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
